@@ -2,7 +2,7 @@
       //OBSERVATIONS
        ---> Dimentionality (3 D)
        ---> Homogeneous Data or Heterogeneous Data (Homogeneous)
-       ---> Regular Data or Jagged Data (Jagged data)
+       ---> Regular Data or Jagged Data (Regular data)
 */
 
 import java.util.*;
