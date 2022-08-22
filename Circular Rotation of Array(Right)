@@ -1,0 +1,6 @@
+Circular Rotation of Array(Right)
+    Formula------>
+        (i + k) % n
+ 
+ 
+ 
