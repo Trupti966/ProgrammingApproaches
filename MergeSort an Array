@@ -1,0 +1,44 @@
+import java.util.*;
+class Main {
+  static int[] mergeArray(int[] ar1, int[] ar2){
+    int[] res = new int[ar1.length + ar2.length];
+    for(int i = 0; i < ar1.length; i++){
+      res[i] = ar1[i];
+    }
+    for(int j = 0; j < ar2.length; j++){
+      res[ar1.length + j] = ar2[j];
+    }
+    return res;
+  }
+
+  static int[] bubbleSort(int[] res){
+    for(int i =0; i < res.length; i++){
+      for(int j = 0; j < res.length-i-1; j++){
+        if(res[j] > res[j+1]){
+          int temp = res[j];
+          res[j] = res[j+1];
+          res[j+1] = temp;
+        }
+      }
+    }
+    return res;
+  }
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int a1 = scan.nextInt();
+    int a2 = scan.nextInt();
+    int[] ar1 = new int[a1];
+    int[] ar2 = new int[a2];
+    for(int i = 0; i < ar1.length; i++){
+      ar1[i] = scan.nextInt();
+    }
+    for(int i = 0; i < ar2.length; i++){
+      ar2[i] = scan.nextInt();
+    }
+    int[] res = mergeArray(ar1, ar2);
+    int [] sorted = bubbleSort(res);
+    for(int i = 0; i < res.length; i++){
+      System.out.print(sorted[i] + " ");
+    }
+  }
+}
