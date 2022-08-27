@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Main {
-  static int countLetters(String st, String k) {
+  static int countSimilarLetters(String st, String k) {
     String s = st.toLowerCase();
     String ke = k.toLowerCase();
     char key = ke.charAt(0);
@@ -19,6 +19,6 @@ class Main {
     Scanner scan = new Scanner(System.in);
     String st = scan.nextLine();
     String k = scan.nextLine();
-    System.out.println(countLetters(st, k));
+    System.out.println(countSimilarLetters(st, k));
   }
 }
