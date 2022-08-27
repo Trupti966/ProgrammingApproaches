@@ -1,0 +1,9 @@
+Advantages of Arrays
+  a) Whenever the bunch of similar types datas are required to store arrays comes in to pictures.
+  b) It can store multiples of values within a single variable.
+  c) At array its easy to access the datas.
+
+Dis-Advantages of Arrays
+  a) Arrays can't Store diffrent type of datas.(Arrays can store only similar types of datas)
+  b) Its must needs the contigueus memory allocations.
+  c) The size of the array can't be change after creation.
