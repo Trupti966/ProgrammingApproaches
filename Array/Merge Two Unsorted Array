@@ -1,0 +1,20 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    int[] firstArray = {10, 20, 30};
+    int[] secondArray = {40, 50, 60, 70, 80};
+  int f_len = firstArray.length;
+    int s_len = secondArray.length;
+    int res_len = f_len + s_len;
+    int[] result = new int[res_len];
+    for(int i = 0; i < f_len ; i++){
+result[i] = firstArray[i];
+    }
+    for(int i = 0; i < s_len ; i++){
+result[f_len + i] = secondArray[i];
+    }
+    for(int i = 0; i < res_len; i++){
+      System.out.print(result[i] + " ");
+    }
+  }
+}
