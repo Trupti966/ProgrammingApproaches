@@ -1,0 +1,41 @@
+/* Create an array to store the ages of students belonging to 2 school for first school 3 classrooms for first classroom 4 students, second classroom 3 students, third classroom 3 students for second school 2 classroom and first have 2 student and 2nd have 3 students.
+      //OBSERVATIONS
+       ---> Dimentionality (3 D)
+       ---> Homogeneous Data or Heterogeneous Data (Homogeneous)
+       ---> Regular Data or Jagged Data (Jagged data)
+*/
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int[][][] a = new int[2][][];
+    a[0] = new int[3][];
+    a[1] = new int[2][];
+    a[0][0] = new int[2];
+    a[0][1] = new int[3];
+    a[0][2] = new int[3];
+    a[1][0] = new int[2];
+    a[1][1] = new int[3];
+
+    // Taking Input in 3D Jagged Array
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[i].length; j++) {
+        for(int k = 0; k < a[i][j].length; k++){
+          System.out.println("Enter the age of " + i + " school " + j + " class "+ k +" student");
+          a[i][j][k] = scan.nextInt();
+        }
+      }
+    }
+
+    // Getting output from 3D Jagged Array
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[i].length; j++) {
+        for(int k = 0; k < a[i][j].length; k++){
+          System.out.println(a[i][j][k]);
+        }
+      }
+    }
+  }
+}
