@@ -1,0 +1,59 @@
+a) Array Declaration  
+      
+       ---------1D Array-------------
+       int [] a; // Valid Declaration
+       int a[]; // Valid Declaration
+       []int a; // Invalid Declaration
+       
+       ---------2D Array-------------
+       int [][] a; // Valid Declaration
+       int a[][]; // Valid Declaration
+       int[] a[]; // Valid Declaration
+       int[] []a; // Valid Declaration
+       []int a[]; // Invalid Declaration
+       [][]int a; // Invalid Declaration
+       
+       ---------3D Array-------------
+       int [][][] a; // Valid Declaration
+       int a[][][]; // Valid Declaration
+       [][][]int a; // Invalid Declaration
+       
+       
+b) Array Instantiation
+
+      a = new int[5];
+      
+ 
+c) Array Declaration + Instantiation
+
+      int [] a = new int[5];
+
+d) Array Initialization
+
+      a[0] = 10;
+      a[2] = 20;
+      a[3] = 30;
+      a[4] = 40;
+      a[5] = 50;
+      
+      
+e) Array Declaration + Instantiation + Initialization      
+        
+        ---------1D Array-------------
+      	int[] a = {10, 20, 30, 40, 50};
+        
+        ---------2D  Regular Array-------------
+        int[] a = {{10, 20, 30, 40}{50, 60, 70, 80}{90, 100, 110, 120}};
+        
+        ---------2D  Jagged Array-------------
+        int[] a = {{10, 20, 30}{50, 60, 70, 80}{90, 100}};
+        
+        
+        ---------3D  Regular Array-------------
+        int[][][] a = {{{1, 2, 3, 4}{5, 6, 7, 8}{9, 10, 11, 12}}{{13, 14, 15, 16}{17, 18, 19, 20}{21, 22, 23, 24}}}
+        
+        ---------3D  Jagged  Array-------------
+        int[][][] a = {{{1, 2, 3, 4}{5, 6}{9, 10, 11}}{{13, 14, 15, 16}{17, 18}{21, 22, 23}}}
+        
+        
+    
