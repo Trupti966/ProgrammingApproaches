@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Main {
+  static String toUpperCase(String st) {
+    String t = "";
+    
+    for (int i = 0; i < st.length(); i++) {
+      char c = st.charAt(i);
+      if (c >= 'a' && c <= 'z') {
+        t = t + (char)(c - 32);
+      } else {
+        t = t + c;
+      }
+    }
+    return t;
+  }
+
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    String st = scan.nextLine();
+    System.out.println(toUpperCase(st));
+  }
+}
